@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 96em;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  span {
+    display: block;
+  }
+}
