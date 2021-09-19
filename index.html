@@ -66,12 +66,12 @@
           <div class="tip-percentage">
             <label for="tip">Select Tip %</label>
             <ul class="tips">
-              <li class="tip">5%</li>
-              <li class="tip">10%</li>
-              <li class="tip">15%</li>
-              <li class="tip">25%</li>
-              <li class="tip">50%</li>
-              <li class="tip tip--custom">
+              <li tabindex="0" class="tip">5%</li>
+              <li tabindex="0" class="tip">10%</li>
+              <li tabindex="0" class="tip">15%</li>
+              <li tabindex="0" class="tip">25%</li>
+              <li tabindex="0" class="tip">50%</li>
+              <li tabindex="0" class="tip tip--custom">
                 <input
                   type="text"
                   name="custom"
@@ -97,7 +97,18 @@
             </div>
           </div>
         </section>
-        <section class="output-section"></section>
+        <section class="output-section">
+          <div class="tip-amount">
+            <h3>Tip Amount <span>/ person</span></h3>
+            <p class="amount">$4.27</p>
+          </div>
+          <div class="tip-amount">
+            <h3>Total<span>/ person</span></h3>
+            <p class="amount">$32.79</p>
+          </div>
+
+          <input type="reset" value="Reset" id="reset" />
+        </section>
       </div>
     </main>
     <!-- Bill
