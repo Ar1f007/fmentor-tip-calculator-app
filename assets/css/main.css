@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  list-style-type: none;
 }
 
 html {
@@ -25,7 +26,11 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 96em;
+  max-width: 80em;
+  background: white;
+  padding: 2.5rem 2.5rem 2.5rem 3.5rem;
+  border-radius: 1.6rem;
+  display: flex;
 }
 
 h1 {
@@ -37,4 +42,143 @@ h1 {
 }
 h1 span {
   display: block;
+}
+
+.input-section {
+  flex: 1;
+}
+
+.output-section {
+  flex-basis: 50%;
+}
+
+label {
+  color: #5e7a7d;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+}
+
+::-moz-placeholder {
+  color: #7f9c9f;
+  font-size: 2.2rem;
+}
+
+:-ms-input-placeholder {
+  color: #7f9c9f;
+  font-size: 2.2rem;
+}
+
+::placeholder {
+  color: #7f9c9f;
+  font-size: 2.2rem;
+}
+
+input {
+  width: 100%;
+  height: 5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: right;
+  color: #00494d;
+  background: #f4fafa;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px solid #26c0ab;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-group {
+  width: 100%;
+  position: relative;
+}
+.input-group:not(:last-of-type) {
+  margin-bottom: 2.8rem;
+}
+.input-group span {
+  position: relative;
+}
+.input-group span img {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  left: 1rem;
+}
+
+.tip-percentage .tips {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tip-percentage .tips .tip {
+  width: 31.3%;
+  height: 5rem;
+  color: white;
+  background: #00494d;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 3%;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+.tip-percentage .tips .tip:is(:nth-child(3)), .tip-percentage .tips .tip:is(:nth-child(6)) {
+  margin-right: 0;
+}
+.tip-percentage .tips .tip:hover, .tip-percentage .tips .tip:focus {
+  background: #26c0ab;
+  color: #00494d;
+}
+
+.tip--custom {
+  width: 31.3%;
+}
+
+.tip--custom input {
+  width: 100%;
+}
+
+.tip--custom input::-moz-placeholder {
+  color: #5e7a7d;
+  text-align: center;
+}
+
+.tip--custom input:-ms-input-placeholder {
+  color: #5e7a7d;
+  text-align: center;
+}
+
+.tip--custom input::placeholder {
+  color: #5e7a7d;
+  text-align: center;
+}
+
+.error-msg {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #d79072;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
 }/*# sourceMappingURL=main.css.map */

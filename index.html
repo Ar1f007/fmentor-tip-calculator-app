@@ -42,14 +42,15 @@
   </head>
   <body>
     <main class="container">
+      <!-- <h1>
+        <span>Spli</span>
+        <span>Tter</span>
+      </h1> -->
       <div class="wrapper">
-        <h1>
-          <span>Spli</span>
-          <span>Tter</span>
-        </h1>
         <section class="input-section">
           <div class="input-group">
             <label for="bill-amount">Bill</label>
+            <p class="error-msg"></p>
             <div class="input-field">
               <span
                 ><img src="./assets/images/icon-dollar.svg" alt="dollar symbol"
@@ -63,15 +64,16 @@
             </div>
           </div>
 
-          <div class="tip-percentage">
-            <label for="tip">Select Tip %</label>
+          <div class="tip-percentage input-group">
+            <label for="tip-percentage">Select Tip %</label>
+            <p class="error-msg"></p>
             <ul class="tips">
               <li tabindex="0" class="tip">5%</li>
               <li tabindex="0" class="tip">10%</li>
               <li tabindex="0" class="tip">15%</li>
               <li tabindex="0" class="tip">25%</li>
               <li tabindex="0" class="tip">50%</li>
-              <li tabindex="0" class="tip tip--custom">
+              <li tabindex="0" class="tip--custom">
                 <input
                   type="text"
                   name="custom"
@@ -84,6 +86,7 @@
 
           <div class="input-group">
             <label for="people-count">Number of People</label>
+            <p class="error-msg"></p>
             <div class="input-field">
               <span
                 ><img src="./assets/images/icon-person.svg" alt="person symbol"
@@ -98,7 +101,7 @@
           </div>
         </section>
         <section class="output-section">
-          <div class="tip-amount">
+          <!-- <div class="tip-amount">
             <h3>Tip Amount <span>/ person</span></h3>
             <p class="amount">$4.27</p>
           </div>
@@ -107,29 +110,10 @@
             <p class="amount">$32.79</p>
           </div>
 
-          <input type="reset" value="Reset" id="reset" />
+          <input type="reset" value="Reset" id="reset" /> -->
         </section>
       </div>
     </main>
-    <!-- Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset -->
 
     <!-- <div class="attribution">
       Challenge by
