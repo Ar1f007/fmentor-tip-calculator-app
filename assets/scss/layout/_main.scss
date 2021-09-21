@@ -3,25 +3,29 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
   width: 100%;
-  max-width: 80em;
+  max-width: 85em;
   background: $white;
   padding: 2.5rem 2.5rem 2.5rem 3.5rem;
   border-radius: 1.6rem;
   display: flex;
+  justify-content: space-between;
 }
 
 h1 {
   font-size: 4rem;
   font-weight: 400;
+  color: $very-dark-cyan;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 
   span {
     display: block;
@@ -29,11 +33,11 @@ h1 {
 }
 
 .input-section {
-  flex: 1;
+  flex-basis: 47.5%;
 }
 
 .output-section {
-  flex-basis: 50%;
+  flex-basis: 47.5%;
 }
 
 label {
@@ -41,7 +45,7 @@ label {
   font-weight: 700;
   display: inline-block;
   margin-bottom: 0.8rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 ::placeholder {
@@ -55,7 +59,7 @@ input {
   font-size: 2.2rem;
   font-weight: 700;
   text-align: right;
-  color: $very-dark-cyan;
+  color: lighten($very-dark-cyan, 5%);
   background: $light-grayish-cyan-2;
   padding: 0.8rem;
   border: none;
@@ -93,7 +97,7 @@ input[type="number"]::-webkit-outer-spin-button {
       position: absolute;
       top: 30%;
       transform: translateY(-50%);
-      left: 1rem;
+      left: 1.5rem;
     }
   }
 }
@@ -143,7 +147,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .tip--custom input::placeholder {
-  color: $dark-grayish-cyan-1;
+  color: hsl(182, 14%, 41%);
   text-align: center;
 }
 
@@ -157,4 +161,67 @@ input[type="number"]::-webkit-outer-spin-button {
   right: 0;
 
   display: none;
+}
+
+// Output Section
+//-------------------------------
+.output-section {
+  background: $very-dark-cyan;
+  border-radius: 1rem;
+  padding: 3.5rem 3rem 2rem;
+}
+
+.tip-amount {
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $light-grayish-cyan-2;
+    align-self: center;
+
+    span {
+      display: block;
+      font-size: 1.4rem;
+      color: $dark-grayish-cyan-2;
+    }
+  }
+
+  .amount {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: $strong-cyan;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 4rem;
+  }
+}
+
+.reset-btn {
+  height: 4.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background: lighten($color: $very-dark-cyan, $amount: 7%);
+  color: lighten($color: $very-dark-cyan, $amount: 5%);
+  margin-top: 10rem;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.reset-btn:hover,
+.reset-btn:active,
+.reset-btn:focus {
+  background: lighten($strong-cyan, 5%);
+  background: hsl(173, 61%, 77%);
+}
+
+.reset-btn--active {
+  background: darken($strong-cyan, 5%);
+  background: hsl(172, 67%, 45%);
+  color: hsl(179, 100%, 16%);
+  cursor: pointer;
 }
