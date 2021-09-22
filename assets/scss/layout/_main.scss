@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 
 .container {
   width: 100%;
@@ -17,19 +17,17 @@
   border-radius: 1.6rem;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    padding: 4rem 2.5rem 10rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 400;
-  color: $very-dark-cyan;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 6rem;
-
-  span {
-    display: block;
-  }
+.logo {
+  margin: 5rem 0;
 }
 
 .input-section {
@@ -98,6 +96,12 @@ input[type="number"]::-webkit-outer-spin-button {
       top: 30%;
       transform: translateY(-50%);
       left: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    &:last-of-type {
+      margin-bottom: 4rem;
     }
   }
 }
@@ -192,10 +196,18 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 4.5rem;
     font-weight: 700;
     color: $strong-cyan;
+
+    @media screen and (max-width: 750px) {
+      font-size: 4rem;
+    }
   }
 
   &:not(:last-of-type) {
     margin-bottom: 4rem;
+
+    @media screen and (max-width: 750px) {
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -210,6 +222,11 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 10rem;
   pointer-events: none;
   transition: all 0.2s;
+
+  @media screen and (max-width: 750px) {
+    margin-top: 4.5rem;
+    margin-bottom: 0.8rem;
+  }
 }
 
 .reset-btn:hover,
