@@ -27,6 +27,9 @@
     ---------------------------------------------------------->
     <link rel="stylesheet" href="./assets/css/main.css" />
 
+    <!-- JS
+    ---------------------------------------------------------->
+    <script src="./assets/js/script.js" defer></script>
     <title>Frontend Mentor | Tip calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -49,7 +52,7 @@
         <section class="input-section">
           <div class="input-group">
             <label for="bill-amount">Bill</label>
-            <p class="error-msg"></p>
+            <p class="error-msg" id="error-msg-bill-amount"></p>
             <div class="input-field">
               <span
                 ><img src="./assets/images/icon-dollar.svg" alt="dollar symbol"
@@ -58,6 +61,7 @@
                 type="number"
                 name="bill-amount"
                 id="bill-amount"
+                min="0"
                 placeholder="0"
               />
             </div>
@@ -72,9 +76,9 @@
               <li tabindex="0" class="tip">15%</li>
               <li tabindex="0" class="tip">25%</li>
               <li tabindex="0" class="tip">50%</li>
-              <li tabindex="0" class="tip--custom">
+              <li tabindex="0" class="tip--custom tip">
                 <input
-                  type="text"
+                  type="number"
                   name="custom"
                   id="tip-custom"
                   placeholder="Custom"
@@ -85,7 +89,7 @@
 
           <div class="input-group">
             <label for="people-count">Number of People</label>
-            <p class="error-msg"></p>
+            <p class="error-msg" id="error-msg-ppl-count"></p>
             <div class="input-field">
               <span
                 ><img src="./assets/images/icon-person.svg" alt="person symbol"
@@ -94,6 +98,7 @@
                 type="number"
                 name="people-count"
                 id="people-count"
+                min="0"
                 placeholder="0"
               />
             </div>
@@ -102,11 +107,11 @@
         <section class="output-section">
           <div class="tip-amount">
             <h3>Tip Amount <span>/ person</span></h3>
-            <p class="amount">$0.00</p>
+            <p class="amount" id="tip-per-person">$0.00</p>
           </div>
           <div class="tip-amount">
             <h3>Total<span>/ person</span></h3>
-            <p class="amount">$0.00</p>
+            <p class="amount" id="total-per-person">$0.00</p>
           </div>
 
           <input type="reset" value="Reset" id="reset" class="reset-btn" />

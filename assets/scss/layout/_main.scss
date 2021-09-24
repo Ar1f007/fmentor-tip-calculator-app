@@ -1,4 +1,4 @@
-@use "../abstracts/variables" as *;
+@use '../abstracts/variables' as *;
 
 .container {
   width: 100%;
@@ -59,9 +59,10 @@ input {
   text-align: right;
   color: lighten($very-dark-cyan, 5%);
   background: $light-grayish-cyan-2;
+  caret-color: $strong-cyan;
   padding: 0.8rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 input:focus {
@@ -69,14 +70,14 @@ input:focus {
   border: 1.5px solid $strong-cyan;
 }
 
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
   margin: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -163,8 +164,6 @@ input[type="number"]::-webkit-outer-spin-button {
   position: absolute;
   top: 0;
   right: 0;
-
-  display: none;
 }
 
 // Output Section
@@ -220,7 +219,8 @@ input[type="number"]::-webkit-outer-spin-button {
   background: lighten($color: $very-dark-cyan, $amount: 7%);
   color: lighten($color: $very-dark-cyan, $amount: 5%);
   margin-top: 10rem;
-  pointer-events: none;
+  outline: none;
+  cursor: not-allowed;
   transition: all 0.2s;
 
   @media screen and (max-width: 750px) {
@@ -232,8 +232,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .reset-btn:hover,
 .reset-btn:active,
 .reset-btn:focus {
-  background: lighten($strong-cyan, 5%);
-  background: hsl(173, 61%, 77%);
+  border: none;
 }
 
 .reset-btn--active {
@@ -241,4 +240,11 @@ input[type="number"]::-webkit-outer-spin-button {
   background: hsl(172, 67%, 45%);
   color: hsl(179, 100%, 16%);
   cursor: pointer;
+}
+
+.reset-btn--active:hover,
+.reset-btn--active:active,
+.reset-btn--active:focus {
+  background: lighten($strong-cyan, 5%);
+  background: hsl(173, 61%, 77%);
 }

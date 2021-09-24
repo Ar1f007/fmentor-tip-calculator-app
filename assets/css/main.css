@@ -92,9 +92,10 @@ input {
   text-align: right;
   color: #006166;
   background: #f4fafa;
+  caret-color: #26c0ab;
   padding: 0.8rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 input:focus {
@@ -194,7 +195,6 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   top: 0;
   right: 0;
-  display: none;
 }
 
 .output-section {
@@ -246,7 +246,8 @@ input[type=number]::-webkit-outer-spin-button {
   background: #006b70;
   color: #006166;
   margin-top: 10rem;
-  pointer-events: none;
+  outline: none;
+  cursor: not-allowed;
   transition: all 0.2s;
 }
 @media screen and (max-width: 750px) {
@@ -259,8 +260,7 @@ input[type=number]::-webkit-outer-spin-button {
 .reset-btn:hover,
 .reset-btn:active,
 .reset-btn:focus {
-  background: #2ad5be;
-  background: #a1e8e0;
+  border: none;
 }
 
 .reset-btn--active {
@@ -268,4 +268,11 @@ input[type=number]::-webkit-outer-spin-button {
   background: #26c0ab;
   color: #005250;
   cursor: pointer;
+}
+
+.reset-btn--active:hover,
+.reset-btn--active:active,
+.reset-btn--active:focus {
+  background: #2ad5be;
+  background: #a1e8e0;
 }/*# sourceMappingURL=main.css.map */
