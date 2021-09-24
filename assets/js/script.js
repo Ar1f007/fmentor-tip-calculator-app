@@ -79,7 +79,7 @@ const updateValueHandler = () => {
 // reload/reset the calculator
 //--------------------------------------------
 const reloadHandler = () => {
-  window.location.reload();
+  setTimeout(() => window.location.reload(true));
 };
 
 // Get the custom tip value provided by the user
