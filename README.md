@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Ar1f007/fmentor-tip-calculator-app)
+- Live Site URL: [Add live site URL here](https://fmentor-tip-calculator-app.vercel.app/)
 
 ## My process
 
@@ -41,6 +41,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Ar1f007](https://www.frontendmentor.io/profile/Ar1f007)
+- Twitter - [@Ar1f007](https://twitter.com/Ariif_007)
+- Instagram - [@\_4r1f](https://www.instagram.com/_4r1f)
