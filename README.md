@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Ar1f007/fmentor-tip-calculator-app)
-- Live Site URL: [Add live site URL here](https://fmentor-tip-calculator-app.vercel.app/)
+- [Solution URL](https://github.com/Ar1f007/fmentor-tip-calculator-app)
+- [Live Site](https://fmentor-tip-calculator-app.vercel.app/)
 
 ## My process
 
