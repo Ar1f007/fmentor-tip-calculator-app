@@ -79,7 +79,16 @@ const updateValueHandler = () => {
 // reload/reset the calculator
 //--------------------------------------------
 const reloadHandler = () => {
-  setTimeout(() => window.location.reload(true));
+  // setTimeout(() => window.location.reload(true));
+  billAmountInput.value = '';
+  numOfPplInput.value = '';
+  resetBtn.classList.remove('reset-btn--active');
+  tipAmountPerPersonOutput.textContent = '$0.00';
+  totalAmountPerPersonOutput.textContent = '$0.00';
+
+  billAmount = 0;
+  totalNumOfPpl = 0;
+  tipValue = 0;
 };
 
 // Get the custom tip value provided by the user
