@@ -17,7 +17,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: #c5e4e7;
+  background: hsl(185deg, 41%, 84%);
   font-family: "Space Mono", monospace;
   font-weight: 400;
 }
@@ -34,7 +34,7 @@ body {
 .wrapper {
   width: 100%;
   max-width: 85em;
-  background: white;
+  background: hsl(0deg, 0%, 100%);
   padding: 2.5rem 2.5rem 2.5rem 3.5rem;
   border-radius: 1.6rem;
   display: flex;
@@ -62,7 +62,7 @@ body {
 }
 
 label {
-  color: #5e7a7d;
+  color: hsl(186deg, 14%, 43%);
   font-weight: 700;
   display: inline-block;
   margin-bottom: 0.8rem;
@@ -70,17 +70,17 @@ label {
 }
 
 ::-moz-placeholder {
-  color: #7f9c9f;
+  color: hsl(184deg, 14%, 56%);
   font-size: 2.2rem;
 }
 
 :-ms-input-placeholder {
-  color: #7f9c9f;
+  color: hsl(184deg, 14%, 56%);
   font-size: 2.2rem;
 }
 
 ::placeholder {
-  color: #7f9c9f;
+  color: hsl(184deg, 14%, 56%);
   font-size: 2.2rem;
 }
 
@@ -91,8 +91,8 @@ input {
   font-weight: 700;
   text-align: right;
   color: #006166;
-  background: #f4fafa;
-  caret-color: #26c0ab;
+  background: hsl(189deg, 41%, 97%);
+  caret-color: hsl(172deg, 67%, 45%);
   padding: 0.8rem;
   border: none;
   border-radius: 4px;
@@ -100,7 +100,7 @@ input {
 
 input:focus {
   outline: none;
-  border: 1.5px solid #26c0ab;
+  border: 1.5px solid hsl(172deg, 67%, 45%);
 }
 
 input[type=number] {
@@ -145,8 +145,8 @@ input[type=number]::-webkit-outer-spin-button {
 .tip-percentage .tips .tip {
   width: 31.3%;
   height: 5rem;
-  color: white;
-  background: #00494d;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(183deg, 100%, 15%);
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -161,8 +161,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin-right: 0;
 }
 .tip-percentage .tips .tip:hover, .tip-percentage .tips .tip:focus {
-  background: #26c0ab;
-  color: #00494d;
+  background: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
 }
 
 .tip--custom {
@@ -174,17 +174,17 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .tip--custom input::-moz-placeholder {
-  color: #5a7677;
+  color: hsl(182deg, 14%, 41%);
   text-align: center;
 }
 
 .tip--custom input:-ms-input-placeholder {
-  color: #5a7677;
+  color: hsl(182deg, 14%, 41%);
   text-align: center;
 }
 
 .tip--custom input::placeholder {
-  color: #5a7677;
+  color: hsl(182deg, 14%, 41%);
   text-align: center;
 }
 
@@ -198,7 +198,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .output-section {
-  background: #00494d;
+  background: hsl(183deg, 100%, 15%);
   border-radius: 1rem;
   padding: 3.5rem 3rem 2rem;
 }
@@ -210,18 +210,18 @@ input[type=number]::-webkit-outer-spin-button {
 .tip-amount h3 {
   font-size: 1.8rem;
   font-weight: 400;
-  color: #f4fafa;
+  color: hsl(189deg, 41%, 97%);
   align-self: center;
 }
 .tip-amount h3 span {
   display: block;
   font-size: 1.4rem;
-  color: #7f9c9f;
+  color: hsl(184deg, 14%, 56%);
 }
 .tip-amount .amount {
   font-size: 4.5rem;
   font-weight: 700;
-  color: #26c0ab;
+  color: hsl(172deg, 67%, 45%);
 }
 @media screen and (max-width: 750px) {
   .tip-amount .amount {
@@ -265,8 +265,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .reset-btn--active {
   background: #22aa98;
-  background: #26c0ab;
-  color: #005250;
+  background: hsl(172deg, 67%, 45%);
+  color: hsl(179deg, 100%, 16%);
   cursor: pointer;
 }
 
@@ -274,5 +274,5 @@ input[type=number]::-webkit-outer-spin-button {
 .reset-btn--active:active,
 .reset-btn--active:focus {
   background: #2ad5be;
-  background: #a1e8e0;
+  background: hsl(173deg, 61%, 77%);
 }/*# sourceMappingURL=main.css.map */
